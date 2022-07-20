@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* styling of nav bar  */
+nav .menus{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0px;
+}
+.menus .logo{
+    /* border: 1px solid red; */
+    width: 230px;
+}
+.menus .left-menus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 39rem;
+}
+.menus .left-menus ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+.left-menus ul li {
+    list-style-type: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    cursor: pointer;
+
+}
+.left-menus ul a:hover{
+    color: rgb(255,118,63);
+    transition: all 0.3s linear;
+
+}
+.left-menus ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+#arount-menu:hover {
+    color: rgb(255,118,63);
+    transition: all 0.3s linear;
+
+    
+}#arount-menu{
+    display: inline-block;
+    transform: rotate(92deg);
+    margin-left: 5px;
+    transition: all 0.3s linear;
+
+}
+.menus .left-menus-login button{
+    font-size: 12px;
+    padding: 11px 19px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(255,118,63);
+    background-color: white;
+    border-width: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bolder;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-color: rgb(255,118,63);
+    transition: all 0.3s linear;
+}
+.menus .left-menus-login button:hover{
+    background-color: rgb(223, 223, 223);
+}
+#mover{
+    position: relative;
+}
+.mover{
+    width: 323px;
+    position: absolute;
+    top: 138%;
+    
+    box-shadow: rgb(12 12 12 / 15%) 0px 49px 226px 23px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    left: -82%;
+    transition: all 0.3s linear;
+    animation-name: op;
+    animation-timing-function: linear;
+    animation-duration: 0.7s;
+
+}
+@keyframes op {
+    0%   {opacity: 0;}
+  25%  {opacity: 0.3;}
+  75%  {opacity: 0.7;}
+  100% {opacity: 1;}
+}
+.mover .mover-logo{
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 13px;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    /* width: 251px; */
+    /* font-family: sans-serif; */
+    /* font-family: ; */
+}
+.mover .mover-logo .mover-img{
+    width: 42px;
+}
+.mover .mover-logo .mover-info{
+    margin-left: 10px;
+
+}
+.mover-info p{
+    font-size: 13px;
+}
+#move{
+    position: relative;
+}
+.jio{
+    
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    width: 27px;
+    height: 23px;
+    /* border: 2px solid red; */
+    background-color: white;
+    position: absolute;
+    left: 39%;
+    top: -18px;
+}
+/* signup-section login  */
+.signup-section{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+.signup-left h1{
+    font-size: 4rem;
+    margin-top: 27px;
+    margin-bottom: 30px;
+}
+.signup-left p{
+    margin: 20px 0px;
+    
+}
+.signup-left {
+    font-size: 20px;
+}
+.signup-left{
+    flex-basis: 37%;
+}
+.signup-right{
+    flex-basis: 40%;
+}
+/* footer  */
+footer{
+    background-color: rgb(79,78,83);
+    padding: 50px 0px;
+}
+footer .footer{
+    width: 80%;
+    margin: auto;
+}
+.footer .socialIcons{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 20px;
+}
+.socialIcons .icons{
+    width: 40px;
+}
+.icons img{
+    width: 100%;
+}
+.downloadApps{
+    width: 20%;
+    margin: auto;
+    display: flex;
+    margin: 46px auto;
+    
+}
+.downloadApps .applesotre,.playsotre{
+    width: 300px;
+}
+.downloadApps img{
+    width: 100%;
+}
+.footer_details{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+
+}
+.footer_details .footer-logo{
+    width: 350px;
+}
+.form-check ul li{
+    list-style: none;
+    margin: 10px 0px;
+}
+.form-check ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+.footerCopy{
+    width: 187px;
+    margin: auto;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px
+
+}
