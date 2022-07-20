@@ -1,0 +1,296 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar {
+    /* border: 1px solid black; */
+    width: 80%;
+    height: 71px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.manual_logo {
+    margin: 15px 0 0 30px;
+    cursor: pointer;
+}
+
+.manual_logo>img {
+    width: 115px;
+    height: 38px;
+}
+
+.request>div>a {
+    text-decoration: none;
+    color: #F9501D;
+    font-size: 14px;
+}
+
+.request>div>a:hover {
+    text-decoration: underline;
+}
+
+.request {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 52px;
+}
+
+
+/* footer styling */
+
+.footer {
+    /* border: 1px solid #F9501D; */
+    margin: auto;
+    margin-top: 20px;
+    height: 100px;
+    width: 100%;
+}
+
+.recent+hr {
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.footer>div>a {
+    margin-left: 190px;
+    text-decoration: none;
+    color: #666;
+    font-weight: lighter;
+}
+
+.footer>div>a:hover {
+    text-decoration: underline;
+}
+
+.support {
+    width: 135px;
+    height: 45px;
+    background-color: #27ae60;
+    cursor: pointer;
+    border: none;
+    border-radius: 999rem;
+    margin: 20px 0 25px 25px;
+    font-weight: 700;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* footer styling */
+
+.sub_navbar {
+    margin: auto;
+    /* border: 1px solid black; */
+    width: 1160px;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.path {
+    /* border: 1px solid black; */
+    width: 167px;
+    height: 22.5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.path>div:first-child>a {
+    width: 88px;
+    height: 17px;
+    color: #F9501D;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.path>div:nth-child(2) {
+    padding: 3px 5px 0 5px;
+    font-size: small;
+}
+
+.path>div:last-child {
+    width: 88px;
+    height: 17px;
+    color: #666666;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 3.2px;
+}
+
+
+#input_sub_search {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    color: #999;
+    font-weight: 300;
+    padding: 0 20px 0 40px;
+    margin: 7px 0 0 0;
+
+}
+
+
+.sub_navbar+hr {
+    width: 100%;
+}
+
+.container {
+    /* border: 1px solid #ff763f; */
+    margin: auto;
+    width: 1142px;
+    height: 1625px;
+    margin-bottom: 150px;
+}
+
+.header {
+    margin-left: 232px;
+    margin-top: 20px;
+    /* border: 1px solid #ff763f; */
+    width: 928px;
+    height: 110.5px;
+
+}
+
+.header>h1 {
+    /* border: 1px solid #ff763f; */
+    width: 928px;
+    height: 48px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.header>p {
+    /* border: 1px solid #ff763f; */
+    width: 928px;
+    height: 22.5px;
+    font-style: italic;
+    color: #333333;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.tree {
+    margin-left: 232px;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 900px;
+    height: 1531px;
+    column-gap: 100px;
+
+}
+
+.tree>div {
+    margin-bottom: 60px;
+}
+
+.tree>div>a {
+    text-decoration: none;
+}
+
+.tree>div>a>h3 {
+    /* border: 1px solid #ff763f; */
+    width: auto;
+    height: 27px;
+    margin-bottom: 25px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.tree>div>a>h3:hover {
+    text-decoration: underline;
+}
+
+.tree>div>ul>li:hover {
+    text-decoration: underline;
+}
+
+.tree>div>ul {
+    list-style-type: none;
+
+}
+
+.diary_list>li>a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 400;
+}
+
+.trends_list>li>a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 400;
+}
+
+.foods_list>li>a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 400;
+}
+
+.settings_list>li>a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 400;
+}
+
+.widgets_list>li>a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 400;
+}
+
+.beta_test>li>a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 400;
+}
+
+.diary_list>li {
+    width: 355.88px;
+    height: 54px;
+}
+
+.trends_list>li {
+    width: 355.88px;
+    height: 54px;
+}
+
+.foods_list>li {
+    width: 355.88px;
+    height: 54px;
+}
+
+.settings_list>li {
+    width: 355.88px;
+    height: 54px;
+}
+
+.widgets_list>li {
+    width: 355.88px;
+    height: 54px;
+}
+
+.beta_test>li {
+    width: 355.88px;
+    height: 54px;
+}
+
+.tree>div>ul>li>a>p {
+    color: #F9501D;
+}
+
+.container>hr {
+    width: 100%;
+}
