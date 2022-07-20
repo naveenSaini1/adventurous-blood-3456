@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .img-logo-container{
+        width: 100%;
+        height: auto;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        padding-bottom: 50px;
+        border-bottom: 3px solid rgba(109, 105, 105, 0.468);
+    }
+    #logo-img{
+        width: 300px;
+        margin: auto;
+    }
+        #container{
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            
+            height: auto;
+            margin: auto;
+            padding: 50px;
+           margin: auto;
+        }
+        #title-1{
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+
+        #input-container{
+            width: 500px;
+            margin: auto;
+            border: 1px solid gray;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 50px;
+           
+            
+        }
+        .input-1{
+            padding: 12px;
+            font-size: 20px;
+        }
+
+        #select-container{
+            border: 1px solid gray;
+            width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 50px;
+            color: black;
+           
+            align-items: center;
+        }
+
+        #term-container{
+            border: 1px solid gray;
+            margin: auto;
+            width: 500px;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: black;
+
+        }
+
+        .create-btn{
+            margin: auto;
+            font-size: 15px;
+            background-color: green;
+            border-radius: 5px;
+            border: none;
+            padding: 15px;
+            width: 600px;
+        }
+        form input{
+            width: 80%;
+            margin-bottom: 4px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="img-logo-container">
+        <img id="logo-img" src="https://cdn1.cronometer.com/2020/landing/cronometer-logo.png" alt="logo">
+    </div>
+    <div id="main-container">
+    
+        <div id="container">
+            <p id="title-1">Create Your Free Account</p>
+       <div id="input-container">
+        <form>
+            <input id="email" class="input-1" type="email" placeholder="Email Address" required>
+            <input id="password" class="input-1" type="password" placeholder="Pasword" required>
+            <input id="cpassword" class="input-1" type="password" placeholder="Confirm Password" required>
+      
+           </div> 
+
+           <div id="select-container">
+              
+                <p>Your Body Type</p>
+                <div>
+                    <span>Sex : </span>
+                <label for="male">
+                    <input type="radio" name="sex" value="Male" id="male">Male
+                </label>
+                <label for="female">
+                    <input type="radio" name="sex" value="Female" id="female">Female
+                </label>
+                <select name="Female" id="female_type">
+                    <option value=""></option>
+                    <option value="Pregnant">Prregnant</option>
+                    <option value="Breastfeeding">Breastfeeding</option>
+                </select>
+                </div>
+
+
+                <div>
+                    <span>Born : </span>
+                <select name="date" id="date">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select name="month" id="month">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <input type="number">
+                </div>
+
+
+                <div>
+                    <span>Height :</span>
+                <select name="#" id="#">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>  
+                </select>
+                <span> ' </span>
+                <select name="#" id="#">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                </select>
+                <span>" / </span>
+                <input type="number">
+                <span>cm</span>
+                </div>
+
+
+               <div>
+                <span>Weight : </span>
+                <input type="number">
+                <select name="#" id="#">
+                    <option value="Pounds">Pounds</option>
+                    <option value="Kilograms">Kilograms</option>
+                </select>
+               </div>
+ 
+               
+
+
+           </div>
+
+           <div id="term-container">
+               <p>Terms of Service & Privacy Settings</p>
+               <label for="one"><input type="checkbox" name="one" id="one">Check All</label>
+               <p>By checking the box below you are indicating you have read and agree to our Terms of Service and Privacy Policy.</p>
+
+
+               <label for="two"><input type="checkbox" name="two" id="two"> I agree to the cronometer.com Terms of Service</label>
+               <p>In order to give you the best experience using Cronometer, we need certain data permissions. (These are optional and can be updated in your settings any time.)</p>
+
+
+               <label for="three"><input type="checkbox" name="three" id="three"> I agree to receive newsletters and promotional materials.</label>
+               <p></p>
+               <label for="four"><input type="checkbox" name="four" id="four">I agree to receive personalized in-app ads. (You will receive less relevant, non-personalized ads if you opt out)</label>
+
+
+           </div>
+
+           <!-- <button class="create-btn" id="submitBtin">Create Account</button>
+         -->
+         <input type="submit" value="create Account" class="create-btn">
+        </div>
+    </form>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    document.querySelector('.create-btn').disabled = false;
+
+    let arr=JSON.parse(localStorage.getItem('login')) || [];
+    // document.getElementById('submitBtin').onclick=function(){
+       
+    // }
+   document.getElementById('one').onchange=function(){
+    const value=document.getElementById('one');
+    if(value.checked){
+        // document.getElementById('submitBtin').disabled=true;
+
+        document.getElementById('two').checked=true;
+        document.getElementById('three').checked=true;
+        document.getElementById('four').checked=true;
+        
+
+    }
+    else{
+        // document.getElementById('submitBtin').disabled=false;
+        document.getElementById('two').checked=false;
+        document.getElementById('three').checked=false;
+        document.getElementById('four').checked=false;
+    }
+   }
+  
+    function signUpUser(email,password,cpassword){
+        
+            let obj={
+                email:email,
+                password:password,
+                cpassword:cpassword
+            }
+            return obj;
+    }
+if( document.getElementById('two').checked==true &&  document.getElementById('three').checked==true &&  document.getElementById('two').checked==true){
+
+    document.querySelector('.create-btn').disabled = true;
+
+}
+else{
+    document.querySelector('.create-btn').disabled = false;
+    
+}
+    document.querySelector(".create-btn").addEventListener("submit",()=>{
+        event.preventDefault();
+        let email=document.getElementById("email").value;
+        let password=document.getElementById("password").value;
+        let cpassword=document.getElementById("cpassword").value;
+
+        if(document.getElementById('email').value=='' || document.getElementById('password').value=='' || document.getElementById('cpassword').value==''){
+            alert('please enter the value in input box')
+
+        }
+        else{
+            let check=true;
+            for(let i=0;i<arr.length;i++){
+                if(arr[i].email==email){
+                    check=false;
+                    break;
+                }
+            }
+            console.log("hell0");
+            if(check){
+                
+            let value=  signUpUser(email,password,cpassword);
+            console.log(value)
+            arr.push(value);
+            localStorage.setItem('login',JSON.stringify(arr));
+            alert('You are in')
+            
+            window.location.href="login.html";
+            }
+            else{
+                alert('email already ragister')
+            }
+
+
+        }
+      
+
+    })
+
+
+
+</script>
