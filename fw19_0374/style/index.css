@@ -82,6 +82,7 @@ nav .menus{
     width: 323px;
     position: absolute;
     top: 138%;
+    display: none;
     
     box-shadow: rgb(12 12 12 / 15%) 0px 49px 226px 23px;
     padding: 7px 15px;
@@ -139,25 +140,54 @@ nav .menus{
     justify-content: center;
     width: 80%;
     margin: auto;
+    margin-top: 35px;
 }
 .signup-left h1{
     font-size: 4rem;
     margin-top: 27px;
     margin-bottom: 30px;
+    font-size: 3rem;
+    margin-top: 27px;
+    margin-bottom: 30px;
+    width: 49%;
+    font-family: 'Poppins', sans-serif;
+
 }
 .signup-left p{
-    margin: 20px 0px;
+    margin: 33px 0px;
+    font-family: 'Poppins', sans-serif;
+
     
 }
 .signup-left {
     font-size: 20px;
 }
 .signup-left{
-    flex-basis: 37%;
+    /* flex-basis: 37%; */
+    flex-basis: 47%;
 }
 .signup-right{
     flex-basis: 40%;
+
 }
+
+.signup-left .showP{
+    font-size: 34px;
+
+}
+.signup-left button,.signupBtn{
+    width: 50%;
+    padding: 13px 1px;
+    background-color: rgb(255,118,63);
+    font-size: 18px;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+
+}
+
 /* footer  */
 footer{
     background-color: rgb(79,78,83);
@@ -221,5 +251,354 @@ footer .footer{
     color: white;
     font-family: 'Poppins', sans-serif;
     margin-top: 20px
+
+}
+.download-section{
+    font-family: 'Poppins', sans-serif;
+    padding: 47px;
+    width: 60%;
+    margin:auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.download-sectionImg {
+    display: flex;
+    justify-content: space-around;
+    margin: 55px 0px;
+    
+}
+.download-sectionImg img{
+    width: 100%;
+}
+.download-section .downloadimg{
+    width: 200px;
+    
+}
+#downloadApps-section{
+    width: 44%;
+}
+/* Discover-your-nutrition styling  */
+.Discover-your-nutrition{
+    background-color: rgb(248,248,248);
+    padding: 100px 27px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.Discover-your-nutrition .discoverInside{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.discoverCards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+
+}
+.discoverCards .cards{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.cards .cardsimg{
+    width: 80px;
+}
+.cards img{
+    width: 100%;
+}
+.nextsection{
+    margin-top: 20px;
+    background: white;
+}
+.section-about{
+    background-color: rgb(248,248,248);;
+}
+/* .section-about */
+
+
+
+.section-about-card{
+  width: 37%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+    font-family: 'Poppins', sans-serif;
+    padding: 13px;
+
+}
+.section-about-card h2{
+    margin: 42px 1px;
+}
+.syncWithApps{
+
+}
+.insideSyncWithApps{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 49px 25px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 33px;
+
+}
+.insideSyncWithApps h3{
+    font-size: 24px;
+}
+.insideSyncWithApps .insideSync{
+    width: 80%;
+    margin-top:12px;
+}
+.insideSync img{
+    width: 100%;
+}
+/* centerLine */
+.centerLine{
+    width: 80%;
+    margin: auto;
+}
+.reviews{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 0px;
+    margin-top: 40px;
+}
+.reviews h2{
+    font-size: 40px;
+}
+.reviews p{
+    font-size: 20px;
+}
+#appstore{
+    width: 100%;
+    height: 480px;
+    font-family: 'Poppins', sans-serif;
+
+    /* border: 1px solid red; */
+}
+#appstore #content{
+    width: 80%;
+    height: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+}
+#appstore #content #image{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+#appstore #content #image p{
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff763f;
+    width: 80%;
+    line-height: 38px;
+    margin: auto;
+    margin-top: 17%;
+}
+#appstore #content #image img{
+    display: block;
+    margin: auto;
+    padding-top: 8%;
+}
+#appstore #content #para{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+#appstore #content #para #p1{
+    font-size: 19px;
+    width: 90%;
+    line-height: 27px;
+    color: #404040;
+    margin-top: 7%;
+}
+
+#playstore{
+    width: 100%;
+    height: 370px;
+    margin-top: 4%;
+    /* border: 1px solid red; */
+    font-family: 'Poppins', sans-serif;
+
+}
+#playstore #content{
+    width: 80%;
+    height: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+}
+#playstore #content #image{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+#playstore #content #image p{
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff763f;
+    width: 80%;
+    line-height: 38px;
+    margin: auto;
+    margin-top: 17%;
+}
+#playstore #content #image img{
+    display: block;
+    margin: auto;
+    padding-top: 8%;
+}
+#playstore #content #para{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+#playstore #content #para #p1{
+    font-size: 19px;
+    width: 90%;
+    line-height: 27px;
+    color: #404040;
+    margin-top: 7%;
+    margin-left: 10%;
+}
+
+#professional{
+    width: 100%;
+    /* height: 340px; */
+    /* border: 1px solid blue; */
+    background-color: #f8f8f8;
+    margin-top: 7%;
+    padding-bottom: 5%;
+    
+}
+#professional #pcontent{
+    width: 70%;
+    /* height: 100%; */
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+}
+#professional #pcontent #image{
+    width: 50%;
+    /* height: 100%; */
+    /* border: 1px solid red; */
+}
+#professional #pcontent #content{
+    width: 50%;
+    /* height: 100%; */
+    /* border: 1px solid red; */
+}
+#professional #pcontent #content h1{
+    font-size: 24px;
+    color: #4f4e53;
+    text-align: center;
+    margin-top: 5%;
+}
+#professional #pcontent #content p{
+    font-size: 22px;
+    letter-spacing: 0.3px;
+    color: #4f4e53;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 3%;
+}
+#professional #pcontent #content button{
+    font-size: 20px;
+    color: #429956;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #429956;
+    padding: 2% 9%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+}
+#professional #pcontent #content button:hover{
+    background-color: lightgray;
+}
+.candion-section{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 73px 0px;
+
+}
+.candion-section h2{
+    font-size: 28px;
+    font-weight:bolder;
+}
+.candion-section p{
+    font-size: 20px;
+    width: 40%;
+    margin: auto;
+}
+.canandaMembers{
+    margin-top: 30px;
+    padding: 37px 20px;
+}
+.canandaMembers .canadaMembersInside{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+
+}
+.canadaMembersInside p{
+    margin: 25px 0px;
+}
+.canadaMembersInside .canadaImg{
+    /* width: 80%; */
+}
+.canadaImg img{
+    width: 100%;
+}
+.canadaMembersInside button,.btnLastSec{
+    width: 30%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 8px 0px;
+    /* font-family: 'Poppins', sans-serif; */
+    letter-spacing: 1px;
+    color: rgb(255,118,63);
+    background-color: white;
+    border-width: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bolder;
+    border-color: rgb(255,118,63);
+}
+.canadaMembersInside button:hover{
+    background-color: rgb(223, 223, 223);
+    transition: all 0.3s linear;
+
+}
+.last-section{
+    padding: 40px 0px;
+}
+.lastSection{
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+
+    text-align: center;
+}
+.btnLastSec {
+    margin-top: 30px;
+}
+.btnLastSec:hover{
+    background-color: rgb(223, 223, 223);
+    transition: all 0.3s linear;
+
 
 }
