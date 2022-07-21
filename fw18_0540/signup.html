@@ -92,7 +92,14 @@
             width: 80%;
             margin-bottom: 4px;
         }
-
+        a{
+            color: orangered;
+        }
+h3{
+   margin: auto;
+   margin-bottom: 30px;
+   font-weight: 60px;
+}
 
     </style>
 </head>
@@ -232,12 +239,12 @@
            </div>
 
            <div id="term-container">
-               <p>Terms of Service & Privacy Settings</p>
+               <h3>Terms of Service & Privacy Settings</h3>
                <label for="one"><input type="checkbox" name="one" id="one">Check All</label>
-               <p>By checking the box below you are indicating you have read and agree to our Terms of Service and Privacy Policy.</p>
+               <p>By checking the box below you are indicating you have read and agree to our <a href="https://cronometer.com/terms/">Terms of Service</a> and <a href="https://cronometer.com/privacy/">Privacy Policy</a>.</p>
 
 
-               <label for="two"><input type="checkbox" name="two" id="two"> I agree to the cronometer.com Terms of Service</label>
+               <label for="two"><input type="checkbox" name="two" id="two"> I agree to the cronometer.com <a href="Terms of Service">Terms of Service</a></label>
                <p>In order to give you the best experience using Cronometer, we need certain data permissions. (These are optional and can be updated in your settings any time.)</p>
 
 
@@ -245,12 +252,13 @@
                <p></p>
                <label for="four"><input type="checkbox" name="four" id="four">I agree to receive personalized in-app ads. (You will receive less relevant, non-personalized ads if you opt out)</label>
 
-
+<!--  -->
            </div>
 
-           <!-- <button class="create-btn" id="submitBtin">Create Account</button>
-         -->
-         <input type="submit" value="create Account" class="create-btn">
+            <button class="create-btn" id="submitBtin">Create Account</button>
+        
+         <!-- <input type="submit" value="create Account" class="create-btn"> -->
+         
         </div>
     </form>
     </div>
@@ -259,7 +267,7 @@
 </html>
 
 <script>
-    document.querySelector('.create-btn').disabled = false;
+    // document.querySelector('.create-btn').disabled = false;
 
     let arr=JSON.parse(localStorage.getItem('login')) || [];
     // document.getElementById('submitBtin').onclick=function(){
@@ -302,7 +310,7 @@ else{
     document.querySelector('.create-btn').disabled = false;
     
 }
-    document.querySelector(".create-btn").addEventListener("submit",()=>{
+    document.querySelector(".create-btn").addEventListener("click",()=>{
         event.preventDefault();
         let email=document.getElementById("email").value;
         let password=document.getElementById("password").value;
@@ -329,7 +337,7 @@ else{
             localStorage.setItem('login',JSON.stringify(arr));
             alert('You are in')
             
-            window.location.href="login.html";
+             window.location.href="login.html";
             }
             else{
                 alert('email already ragister')
