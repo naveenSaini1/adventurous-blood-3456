@@ -10,10 +10,13 @@ nav .menus{
     justify-content: space-around;
     align-items: center;
     padding: 30px 0px;
+    font-family: 'Poppins', sans-serif;
+
 }
 .menus .logo{
     /* border: 1px solid red; */
     width: 230px;
+    cursor: pointer;
 }
 .menus .left-menus{
     display: flex;
@@ -57,7 +60,7 @@ nav .menus{
     transition: all 0.3s linear;
 
 }
-.menus .left-menus-login button{
+.menus .left-menus-login button,.DiariesInside button{
     font-size: 12px;
     padding: 11px 19px;
     font-family: 'Poppins', sans-serif;
