@@ -14,4 +14,15 @@ document.getElementById('mover').addEventListener('click',function(){
     }
     console.log('hello')
 })
+
+document.getElementById('index').addEventListener('click',function(){
+    window.location.href='index.html'
+})
 // transform: rotate(267deg);
+document.getElementById('pro').addEventListener('click',function(){
+    window.location.href='cronometerPro.html'
+})
+// logo
+document.querySelector('.logo').addEventListener('click',function(){
+    window.location.href='index.html'
+})

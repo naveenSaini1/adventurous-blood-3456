@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+
+}
+.signup-section {
+    justify-content: space-around;
+}
+.signup-left h1{
+    width: 100%;
+    font-size: 2rem;
+}
+.signup-left .showP {
+    font-size: 22px;
+}
+.signup-left button, .signupBtn {
+    background-color: rgb(93,161,81);
+}
+.showBtn{
+    color: rgb(93,161,81);
+    width: fit-content;
+    font-weight: bolder;
+}
+.centerLine{
+    /* width: 80%; */
+    margin-top: 60px;
+}
+.Discover-your-nutrition {
+    background-color: white;
+    margin-top: 20px;
+    
+}
+.Diaries{
+    background-color: rgb(248,248,248);
+    margin-top: 20px;
+    padding: 100px 0px;
+    
+}
+.DiariesInside{
+    /* width: 400px; */
+    /* margin: auto; */
+    text-align: center;
+}
+.DiariesInside h1{
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+.DiariesInside p{
+    font-family: 'Poppins', sans-serif;
+  
+}
+.DiariesInside button {
+    width: 250px;
+    background-color: rgb(93,161,81);
+    margin-top: 20px;
+    border-color: rgb(93,161,81);
+    color: white;
+    font-size: 1rem;
+}
+
+/* Exceed */
+.Exceed{
+    margin-top: 20px;
+    padding: 61px 0px;
+}
+.exceedSectionUp{
+    text-align: center;
+}
+.exceedSectionUp h2{
+    font-size: 4rem;
+}
+.exceedSectionUp p{
+    font-size: 2rem;
+}
+.exceedSectionDown{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.exceedLeft {
+    /* width: 40%; */
+    min-width: 556px;
+    padding: 20px ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+
+}
+.exceedLeft  img{
+    width: 100%;
+}
+
+.exceedRight{
+    width: 40%;
+    
+}
+.exceedCards{
+    margin-bottom: 20px;
+}
+.exceedCards h3{
+    font-size: 2rem;
+}
+.exceedsecLeft{
+    min-width: 556px;
+    padding: 20px ;
+}
+.centerLine2{
+    margin: 100px auto;
+}
+.exceedsecLeft img{
+    width: 100%;
+}
+.nexfeedH2 h2{
+    font-size: 2.5rem;
+}
+.nexfeedH2 p{
+    font-size: 1.5rem;
+}
+#appstore #content #image {
+    display: flex;
+}
+#appstore #content #image img {
+    width: 87%;
+}
+#appstore #content {
+    width: 69%;
+}
+/* rgb(248,248,248) */
+#content{
+    background-color: white;
+}
+.oxford {
+    background-color:rgb(248,248,248) ;
+    padding: 99px 0px;
+
+}
+.signdaires{
+    background-color: white;
+}
+.signdaires h1{
+    font-size: 2rem;
+}
+.signdaires p{
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+.signdiaPart{
+    margin-top: 50px;
+}
+.signdiaPart h3{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: rgb(140, 140, 140);
+    font-weight: 400;
+}
+.signdiaPart a{
+    font-size: 1.3rem;
+    color: black;
+}
