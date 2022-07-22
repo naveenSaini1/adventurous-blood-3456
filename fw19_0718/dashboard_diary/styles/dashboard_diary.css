@@ -1,0 +1,786 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+    font-family: sans-serif;
+}
+
+/* navbar styling starts here */
+.navbar {
+    /* border: 1px solid black; */
+    width: 1324px;
+    height: 50px;
+    display: flex;
+    margin: auto
+}
+
+.navbar>div>img {
+    width: 200px;
+    height: 44px;
+    cursor: pointer;
+}
+
+.sub_navbar {
+    width: 590px;
+    height: 98%;
+    margin-left: 170px;
+    /* border: 1px solid black; */
+    /* background-color: red; */
+
+}
+
+.sub_navbar>ul {
+    display: flex;
+    height: 100%;
+
+
+}
+
+.sub_navbar>ul>li {
+    /* background-color: yellow; */
+    list-style: none;
+    width: 100%;
+    height: 55%;
+    /* border: 1px solid black; */
+    margin-left: 5px;
+    margin-top: 23px;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+.sub_navbar>ul>li>a {
+    /* background-color: pink; */
+    text-decoration: none;
+    /* border: 1px solid orange; */
+    width: 100%;
+    color: #e65f29;
+    padding: 6px 20px 9px;
+    font-weight: 600;
+    font-size: 14px;
+
+
+}
+
+.sub_navbar>ul>li>a:first-child {
+    border-bottom: none;
+    /* border: 1px solid gray; */
+}
+
+.sub_navbar>ul>li>a:hover {
+    border: 1px solid grey;
+    border-bottom: none;
+
+}
+
+.border {
+    border: 0.1px solid gray;
+
+}
+
+/* navbar styling ends here */
+
+/* footer styling starts here */
+.footer {
+    /* border: 1px solid black; */
+    width: 99.7%;
+    /* height: 215px; */
+    margin: auto;
+}
+
+.container-1>ul {
+    width: 99.9%;
+    height: 20px;
+    display: flex;
+
+
+}
+
+.container-2 {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 165px;
+    background-color: #4F4E53;
+    display: flex;
+    margin-top: 20px;
+}
+
+.container-1>ul {
+    width: 500px;
+    margin: auto;
+}
+
+.container-1>ul>li:first-child {
+    list-style: none;
+    margin: auto;
+
+}
+
+.container-1>ul>li {
+    list-style: none;
+    /* border: 1px solid black; */
+    margin: auto;
+    list-style: disc;
+    color: #ff763f;
+
+}
+
+.container-1>ul>li>a {
+    /* border: 1px solid yellow; */
+    text-decoration: none;
+    font-size: 14px;
+    color: #4F4E53;
+    font-weight: 500;
+}
+
+.app_links {
+    width: 397px;
+    height: 60px;
+    margin: 40px 0 0 20px;
+
+}
+
+.app_links>img:first-child {
+    width: 126px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.app_links>img:last-child {
+    width: 138px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.comp_logo {
+    width: 530px;
+    height: 70px;
+    margin: 40px 0 0 0;
+
+    text-align: center;
+    font-size: 10px;
+}
+
+.comp_logo>p>a {
+    text-decoration: none;
+    color: white;
+}
+
+.comp_logo>p>a:hover {
+    color: #ff763f;
+}
+
+.comp_logo>p {
+    margin-top: 10px;
+}
+
+.comp_logo>img {
+    cursor: pointer;
+    width: 200px;
+    height: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.links {
+    margin-top: 40px;
+    width: 377px;
+    height: 44px;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    margin-right: 25px;
+}
+
+.links>a>img {
+    width: 25px;
+    height: 25px;
+
+}
+
+.support {
+    width: 135px;
+    height: 45px;
+    background-color: #27ae60;
+    cursor: pointer;
+    border: none;
+    border-radius: 999rem;
+    margin: 20px 0 25px 25px;
+    font-weight: 700;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* footer styling ends here */
+
+/* body styling starts here */
+
+.body {
+    width: 99.7%;
+    height: 1880px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin: 20px 0 40px 2px;
+
+}
+
+.content {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 122px 0 122px;
+    height: 97%;
+    width: 1080px;
+}
+
+.left_div {
+    /* border: 1px solid black; */
+    height: 99%;
+    width: 300px;
+    display: block;
+
+}
+
+.date {
+    width: 300px;
+    height: 51px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    display: flex;
+    gap: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.date>div {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ff763f;
+    margin: 15px 0 0 45px;
+    cursor: pointer;
+
+}
+
+.e_history {
+    width: 300px;
+    height: 29px;
+}
+
+.e_history>div:first-child {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: rgb(232, 232, 232);
+    width: 300px;
+
+}
+
+.e_history_content {
+    width: 300px;
+    height: 377px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+
+.e_history_content>div:first-child {
+    width: 280px;
+    height: 280px;
+    background-color: rgb(255, 242, 242);
+    margin: 10px 0 0 10px;
+
+}
+
+#status {
+    width: 200px;
+    height: 25px;
+    margin: 30px 0 0 50px;
+}
+
+#when {
+    width: 200px;
+    height: 25px;
+    margin: 5px 0 0 50px;
+}
+
+.weight_check {
+    width: 300px;
+    height: 437px;
+    /* border: 1px solid gainsboro; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.weight_check>div:first-child {
+    background-color: rgb(232, 232, 232);
+    text-align: center;
+    margin-top: 400px;
+    
+}
+
+.weight_check>div:nth-child(2) {
+    width: 280px;
+    height: 327px;
+    background-color: rgb(255, 242, 242);
+    margin: 10px 0 0 10px;
+}
+
+#time {
+    width: 200px;
+    height: 25px;
+    margin: 30px 0 0 50px;
+}
+
+.right_div {
+    /* border: 1px solid red; */
+    height: 99%;
+    width: 760px;
+
+}
+
+.add_items {
+    /* border: 1px solid black; */
+    width: 98%;
+    height: 29px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.add_items>div>button>img {
+    width: 14px;
+    height: 16px;
+}
+
+.add_items>div>button {
+    border: none;
+    background-color: transparent;
+    width: 129px;
+    height: 29px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.add_items>div>button:hover {
+    border-radius: 14px;
+    background-color: rgb(236, 236, 236);
+}
+
+.dotmenu {
+    margin-left: 130px;
+    cursor: pointer;
+}
+
+.dotmenu>img {
+    width: 25px;
+    height: 25px;
+}
+
+.serving_panel {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    width: 99.5%;
+    height: 302px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.serving_panel>table>tbody>tr:first-child {
+    background-color: #eee;
+}
+
+/* th>div{
+    border: 1px solid black;
+} */
+
+th {
+
+    height: 30px;
+    width: 200px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #222;
+
+}
+
+td {
+
+    height: 25px;
+    width: 200px;
+    font-weight: 400;
+    font-size: 11px;
+    color: #222;
+
+}
+
+.diary_side {
+    display: flex;
+    margin: auto;
+    width: 762px;
+    height: 177px;
+    margin: 5px 5px 0 7px;
+    gap: 5px;
+}
+
+.e_summary {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    width: 380px;
+    height: 175px;
+
+}
+
+.e_summary_head {
+    height: 35px;
+    width: 100%;
+}
+
+.e_summary_head>p {
+    font-size: 12px;
+    font-weight: 550;
+    padding: 4px 0 0 8px;
+    color: #555;
+}
+
+.e_sum_canvas {
+    display: flex;
+}
+
+.e_sum_canvas>div {
+    border: 8px solid rgb(204, 204, 204);
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin: 10px 0 0 19px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.e_sum_canvas>div>p {
+    margin-top: 50px;
+
+}
+
+.e_sum_canvas>div>div:first-child {
+    font-weight: 800;
+}
+
+.e_sum_canvas>div>p:last-child {
+    margin-top: 35px;
+    /* margin-left: 1px; */
+    color: black;
+}
+
+.e_sum_canvas>div:nth-child(2) {
+    border: 8px solid rgb(250, 84, 208);
+
+}
+
+.e_sum_canvas>div>div:nth-child(2) {
+    text-align: center;
+
+}
+
+.e_sum_canvas>div:nth-child(3) {
+    border: 1px solid;
+    background-color: #9279BB;
+    color: white;
+    width: 85px;
+    height: 65px;
+    border-radius: 5px;
+    margin: 20px 0 0 19px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.e_sum_canvas>div:nth-child(3)>div:first-child {
+    width: 64px;
+    height: 21px;
+    font-size: 16px;
+    margin: 20px 0 0 25px;
+}
+
+.e_sum_canvas>div:nth-child(3)>div:last-child {
+    width: 83px;
+    height: 23px;
+    margin-left: 1px;
+    background-color: #77639A;
+}
+
+.e_sum_canvas>div>div:first-child {
+    width: 64px;
+    height: 21px;
+    font-size: 16px;
+    margin: 20px 0 0 25px;
+
+}
+
+.e_sum_canvas>div>div:nth-child(2) {
+    width: 59px;
+    height: 10px;
+    font-size: 9px;
+    margin-left: 13px;
+
+}
+
+.macro_target {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    width: 358px;
+    height: 175px;
+
+}
+
+.macro_target_head {
+    width: 100%;
+    height: 26px;
+
+}
+
+.macro_target_head>p {
+    font-size: 12px;
+    font-weight: 550;
+    padding: 4px 0 0 8px;
+    color: #555;
+}
+
+.macro_target_head>div {
+    display: flex;
+    margin-top: 5px;
+
+}
+
+.macro_target_head>div>div:first-child {
+    width: 66px;
+    height: 17px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.macro_target_head>div>div:last-child {
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 286px;
+    height: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    background-color: rgb(227, 227, 227);
+    text-align: center;
+
+
+}
+
+.nutritious_summary {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    width: 745px;
+    height: 134px;
+    margin: 5px 5px 0 7px;
+    display: flex;
+
+}
+
+/* .nutritious_summary>div {
+    width: 738px;
+    height: 24px;
+} */
+
+/* .nutritious_summary>div>p {
+    border: 1px solid black;
+    font-size: 12px;
+    font-weight: 550;
+    padding: 4px 0 0 8px;
+    color: #555;
+} */
+
+
+.target {
+    /* border: 1px solid black; */
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    margin: 30px 0 0 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.target>div>div:first-child {
+    width: 64px;
+    height: 21px;
+    font-size: 16px;
+    margin: 20px 0 0 25px;
+
+}
+
+.target>div>div:last-child {
+    width: 59px;
+    height: 10px;
+    font-size: 9px;
+    margin-left: 13px;
+
+}
+
+
+.nutritious_summary>div:last-child>img {
+    width: 600px;
+    height: 96px;
+    margin: 17px 0 0 15px;
+}
+
+
+.highlited_nutrients {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    width: 745px;
+    height: 138px;
+    margin: 5px 5px 0 7px;
+}
+
+.highlited_nutrients>div {
+    width: 738px;
+    height: 20px;
+}
+
+.highlited_nutrients>div>p {
+    font-size: 12px;
+    font-weight: 550;
+    padding: 4px 0 0 8px;
+    color: #555;
+}
+
+.h_n_canvas {
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.h_n_canvas>div {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* border: 1px solid black; */
+    border-radius: 50px;
+    width: 74px;
+    height: 74px;
+}
+
+.h_n_canvas>div>div:first-child {
+    width: 64px;
+    height: 21px;
+    font-size: 16px;
+    margin: 20px 0 0 25px;
+
+}
+
+.h_n_canvas>div>div:last-child {
+    width: 59px;
+    height: 10px;
+    font-size: 9px;
+    margin-left: 25px;
+
+}
+
+.table {
+    width: 98%;
+    height: 1000px;
+    /* border: 1px solid black; */
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+}
+
+.general {
+    /* border: 1px solid black; */
+    margin-left: 10px;
+    width: 350px;
+    height: 141px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    margin-bottom: 5px;
+}
+
+.general>div {
+    background-color: rgb(236, 236, 236);
+}
+
+.carbs {
+    /* border: 1px solid black; */
+    margin-left: 10px;
+    width: 350px;
+    height: 170px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    margin-bottom: 5px;
+}
+
+.carbs>div {
+    background-color: rgb(236, 236, 236);
+}
+
+.lipids {
+    /* border: 1px solid black; */
+    margin-left: 10px;
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    margin-bottom: 5px;
+}
+
+.lipids>div {
+    background-color: rgb(236, 236, 236);
+}
+
+.protien {
+    /* border: 1px solid black; */
+    margin-left: 10px;
+    width: 350px;
+    height: 358px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    margin-bottom: 5px;
+}
+
+.protien>div {
+    background-color: rgb(236, 236, 236);
+}
+
+.vitamins {
+    /* border: 1px solid black; */
+    margin-left: 15px;
+    width: 350px;
+    height: 358px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    margin-bottom: 5px;
+}
+
+.vitamins>div {
+    background-color: rgb(236, 236, 236);
+}
+
+.minerals {
+    /* border: 1px solid black; */
+    margin-left: 15px;
+    width: 350px;
+    height: 307px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    margin-bottom: 5px;
+}
+
+.minerals>div {
+    background-color: rgb(236, 236, 236);
+}
+
+.info {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 79%;
+}
