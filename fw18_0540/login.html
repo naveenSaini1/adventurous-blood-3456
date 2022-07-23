@@ -4,60 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/login.css">
+    <link rel="stylesheet" href="./style/footer.css">
     <title>Document</title>
-    <style>
-        #main-container{
-            border: 1px solid rgba(163, 155, 155, 0.349);
-            border-radius: 15px;
-            width: 450px;
-            height: auto;
-            margin: auto;
-            padding: 50px;
-            justify-content: center;
-            align-items: center;
-        }
-        #container{
-           margin: auto;
-           display: flex;
-           flex-direction: column;
-           gap: 10px;
-           justify-content: center;
-           align-items: center;
-           
-        }
-        img{
-            width: 280px;
-            height: auto;
-            margin-bottom: 30px;
-        }
-
-        .input{
-            width: 350px;
-            padding: 13px;
-            border-radius: 5px;
-            border-color: rgba(151, 145, 145, 0.404);
-
-        }
-        #submit{
-            width: 380px;
-            padding: 15PX;
-            border-radius: 5px;
-            border-color: rgba(151, 145, 145, 0.404);
-            font-size: 18PX;
-            font-weight: bold;
-
-        }
-        .login-footer{
-            display: flex;
-            justify-content: space-around;
-            font-size: 18px;
-            
-        }
-        a{
-            color: rgba(232, 56, 37, 0.896);
-        }
-
-    </style>
+   
 
 </head>
 <body>
@@ -72,36 +22,61 @@
             
         </div>
     </form>
+    <br><br>
         <div class="login-footer">
             <p>Not a member? <a href="signup.html">Sign Up Now</a></p>
           
         </div>
     </div>
+    <br><br>
+    <div class="body"></div>
 
+    <div class="footer">
+        <div class="container-1">
+            <ul>
+                <li><a href="">Blog</a></li>
+                <div></div>
+                <li><a href="">Forums</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Affliates</a></li>
+                <li><a href="">Jobs</a></li>
+            </ul>
+        </div>
+    </div> 
+    <div class="container-2">
+        <div class="app_links">
+            <img src="https://cdn1.cronometer.com/logos/app-store.png" alt="">
+            <img src="https://cdn1.cronometer.com/logos/google-play.png" alt="">
+        </div>
+        <div><button class="support">Support</button></div>
+        <div class="comp_logo">
+            <img src="https://cdn1.cronometer.com/logos/cronometer-logo-white.png" alt="">
+            <p><a href="">Copyright © 2011-2022, All Rights Reserved</a></p>
+        </div>
+        <div class="links">
+            <a href="https://www.facebook.com/"><img
+                    src="https://imgs.search.brave.com/deeHohLOdGSkR_3O9WPzGprlmSUagO4TRGz5MtBKtz0/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9mL2ZmL0Zh/Y2Vib29rX2xvZ29f/MzZ4MzYuc3ZnLzEy/MDBweC1GYWNlYm9v/a19sb2dvXzM2eDM2/LnN2Zy5wbmc"
+                    alt=""></a>
+            <a href="https://twitter.com/"><img
+                    src="https://imgs.search.brave.com/HSqZIViVT05nuvKYi1zxI4wa9U4S0cYVgXJBDNUjowc/rs:fit:1200:1200:1/g:ce/aHR0cDovLzEwMDBs/b2dvcy5uZXQvd3At/Y29udGVudC91cGxv/YWRzLzIwMTcvMDYv/VHdpdHRlci1Mb2dv/LnBuZw"
+                    alt=""></a>
+            <a href="https://www.instagram.com/"><img
+                    src="https://imgs.search.brave.com/IDrvaNJN6gpiYix9Ok-oXDYw5irsH5_3hRjUdIe-fZ4/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/dGVjaG5vYmV6ei5j/b20vZmlsZXMvdXBs/b2Fkcy8yMDE1LzAy/L2luc3RhZ3JhbS0x/NTgxMjY2XzE5MjAu/anBn"
+                    alt=""></a>
+            <a href="https://www.youtube.com/"><img
+                    src="https://imgs.search.brave.com/7ulQhDe-3Xal-c1RuURahETWpqbDpRRV1HkcyipG0Mw/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE3LzA1/L05ldy1Zb3VUdWJl/LWxvZ28uanBn"
+                    alt=""></a>
+        </div>
+        
+    </div>`
     
 </body>
 </html>
 
 <script>
 
-    // function loginUser(email,password){
-    //     let getEmail=localStorage.getItem("email");
-    //     let getPassword=localStorage.getItem("password");
-    //     if(getEmail==email && getPassword==password){
-    //         alert("User Login Sucessfull");
-    //          window.location.href="signup.html";
-    //     }else{
-    //         alert("Enter Correct Email and Password")
-    //          window.location.href="login.html";
-    //     }
-    // }
-
-    // document.querySelector(".login").addEventListener("click",()=>{
-    //     event.preventDefault();
-    //     let email=document.querySelector("#email").value;
-    //     let password=document.querySelector("#password").value;
-    //     loginUser(email,password);
-    // })
+    
 
     let data=JSON.parse(localStorage.getItem("login"))||[];
 
