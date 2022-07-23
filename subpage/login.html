@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/login.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <title>Document</title>
+   
+
+</head>
+<body>
+    <div id="main-container">
+        <div id="container">
+            <img src="https://cdn1.cronometer.com/logos/cronometer-logo-orange.png" alt="logo">
+            <form id="form">
+            <input id="email" class="input" type="email" placeholder="Email Address">
+            <input id="password" class="input" type="password" placeholder="Password">
+            <!-- <button class="login">LOGIN</button> -->
+            <button id="submit" onclick="myfun(event)">Login</button>
+            
+        </div>
+    </form>
+    <br><br>
+        <div class="login-footer">
+            <p>Not a member? <a href="signup.html">Sign Up Now</a></p>
+          
+        </div>
+    </div>
+    <br><br>
+    <div class="body"></div>
+
+    <div class="footer">
+        <div class="container-1">
+            <ul>
+                <li><a href="">Blog</a></li>
+                <div></div>
+                <li><a href="">Forums</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Affliates</a></li>
+                <li><a href="">Jobs</a></li>
+            </ul>
+        </div>
+    </div> 
+    <div class="container-2">
+        <div class="app_links">
+            <img src="https://cdn1.cronometer.com/logos/app-store.png" alt="">
+            <img src="https://cdn1.cronometer.com/logos/google-play.png" alt="">
+        </div>
+        <div><button class="support">Support</button></div>
+        <div class="comp_logo">
+            <img src="https://cdn1.cronometer.com/logos/cronometer-logo-white.png" alt="">
+            <p><a href="">Copyright © 2011-2022, All Rights Reserved</a></p>
+        </div>
+        <div class="links">
+            <a href="https://www.facebook.com/"><img
+                    src="https://imgs.search.brave.com/deeHohLOdGSkR_3O9WPzGprlmSUagO4TRGz5MtBKtz0/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9mL2ZmL0Zh/Y2Vib29rX2xvZ29f/MzZ4MzYuc3ZnLzEy/MDBweC1GYWNlYm9v/a19sb2dvXzM2eDM2/LnN2Zy5wbmc"
+                    alt=""></a>
+            <a href="https://twitter.com/"><img
+                    src="https://imgs.search.brave.com/HSqZIViVT05nuvKYi1zxI4wa9U4S0cYVgXJBDNUjowc/rs:fit:1200:1200:1/g:ce/aHR0cDovLzEwMDBs/b2dvcy5uZXQvd3At/Y29udGVudC91cGxv/YWRzLzIwMTcvMDYv/VHdpdHRlci1Mb2dv/LnBuZw"
+                    alt=""></a>
+            <a href="https://www.instagram.com/"><img
+                    src="https://imgs.search.brave.com/IDrvaNJN6gpiYix9Ok-oXDYw5irsH5_3hRjUdIe-fZ4/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/dGVjaG5vYmV6ei5j/b20vZmlsZXMvdXBs/b2Fkcy8yMDE1LzAy/L2luc3RhZ3JhbS0x/NTgxMjY2XzE5MjAu/anBn"
+                    alt=""></a>
+            <a href="https://www.youtube.com/"><img
+                    src="https://imgs.search.brave.com/7ulQhDe-3Xal-c1RuURahETWpqbDpRRV1HkcyipG0Mw/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE3LzA1/L05ldy1Zb3VUdWJl/LWxvZ28uanBn"
+                    alt=""></a>
+        </div>
+        
+    </div>`
+    
+</body>
+</html>
+
+<script>
+
+    
+
+    let data=JSON.parse(localStorage.getItem("login"))||[];
+
+function myfun(event){
+  
+event.preventDefault()
+let flag=true;
+
+
+let email=form.email.value;
+if(email==""){
+    alert("Please enter ur Email")
+    flag=false;
+}
+
+let password=form.password.value;
+if(password==""){
+    alert("Please enter ur password")
+    flag=false;
+}
+if( flag){
+var result=false;
+    for(var i=0;i<data.length;i++){
+        var obj=data[i]
+        if(obj.email==email && obj.password==password){
+            result=true;
+    }
+    
+}
+}
+if(result){
+    alert("Login Sucessful")
+
+    window.location.href="index.html"
+    localStorage.setItem('log','true')
+}
+else if(flag){
+    alert("Invalid Credtials")
+    localStorage.setItem('log','false')
+
+}
+
+}
+</script>

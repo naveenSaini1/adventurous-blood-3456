@@ -1,0 +1,236 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg{
+            background-color: transparent;
+            background-image: linear-gradient(80deg,#ff763f 0%,#ffb56b 100%);
+            padding: 40px 0 100px;
+            display: block;
+            font-size: 16px;
+            /* box-sizing: border-box; */
+            
+            
+        }
+
+        #title{
+            font-size: 38px;
+            color: #fff;
+            font-weight: 700;
+            font-family: "Open Sans",Sans-serif;
+            line-height: 1.25em;
+            /* overflow-wrap: break-word; */
+            text-align: center;
+        }
+
+        #para{
+            color: #fff;
+            font-family: "Open Sans",Sans-serif;
+            font-size: 1.41em;
+            font-weight: 400;
+            line-height: 1.5em;
+            display: block;
+            text-align: center;
+            /* --widgets-spacing: 20px; */
+        }
+
+        .bg1{
+            margin: auto;
+            margin-left: 15%;
+            margin-top: -30px;
+            margin-right: 3%;
+            font-family: "Open Sans",Sans-serif;
+            font-weight: 400; 
+            width:70%;
+            height:90%;
+            display: block;
+        
+            /* border:1px solid green; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       
+        }
+
+        #img{
+       
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        #p1{
+            color: #5c5c5c;
+            font-family: "Open Sans",Sans-serif;
+            font-size: 2.74em;
+            font-weight: 400;
+            line-height: 1.25em;
+            /* text-align: center;
+            justify-content: center; */
+            width:60%;
+            margin-left: 20%;
+        }
+
+        #p2{
+            font-size: 16px;
+            color: #2d2d2d;
+            font-family: "Open Sans",Sans-serif;
+            font-weight: 400;
+            line-height: 1.5em;
+            width:60%;
+            margin-left: 20%;
+        }
+
+        #p3{
+            color: #5c5c5c;
+            font-family: "Open Sans",Sans-serif;
+            font-size: 1.41em;
+            font-weight: 400;
+            line-height: 1.5em;
+            width:60%;
+            margin-left: 20%;
+        }
+
+        #p4{
+            /* color: #2d2d2d; */
+            font-family: "Open Sans",Sans-serif;
+            font-weight: 400;
+            line-height: 1.5em;
+            /* font-size: 16px; */
+            color: #1d1c1d;
+            font-style: italic;
+            font-family: Slack-Lato, Slack-Fractions, appleLogo, sans-serif;
+            font-size: 15px;
+            width:60%;
+            margin-left: 20%;
+           
+        }
+
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(1,auto);
+         
+            width:100%;
+            margin:auto;  
+            /* margin-left: 20px; */
+        }
+       
+
+        #container img{
+            height: 50%;
+            width: 50%;
+
+        }
+
+        #size{
+            display: grid;
+            /* grid-template-columns: repeat(3,1fr); */
+            grid-template-rows: repeat(3,auto);
+            gap:20px;
+            /* border:1px solid red; */
+            width:auto;
+            margin:auto
+        } 
+
+        .container{
+            height:auto;width:65%;margin:auto;margin-bottom:100px;display:flex
+
+        }
+
+       .card img{
+            width:100%;border-top-left-radius:20px;border-top-right-radius:20px
+        }
+
+        .card{
+            height:98%;width:30%;border:1px solid grey;margin:auto;border-radius:20px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+        }
+
+        
+
+        #style{
+            font-size: 15px;
+                    color: #1d252d;
+                    font-weight: 600;font-style: italic;
+        }
+
+        #btn{
+            fill: #fff;
+            color: #fff;
+            background-color: #67ac5b;
+            font-size: 16px;
+            font-family: "Open Sans",Sans-serif;
+            line-height: 1;
+            margin-left: 45%;
+            text-align: center;
+            border-radius: 4px;
+            padding: 16px 40px;
+            width: auto;
+            font-family: "Open Sans",Sans-serif;
+            border:0px;
+            margin-top: -5%;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <h1 id="title">How To: Track Your Heart Rate Over Time</h1>
+        <p id="para"> June 6, 2022 </p>
+
+    </div>
+
+    
+
+    <div class="row">
+        <div class="bg1">
+          <img id="img" src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_654,h_477/https://cronometer.com/blog/wp-content/uploads/2022/06/Heart-rate-symbol.png">
+        </div>
+    </div>
+
+    <div>
+        <p id="p1">Recent Improvements To Biometric Tracking Allow You To Track Heart Rate Over Time</p>
+        <p id="p2">We have made some big improvements to our imported heart rate tracking in the app! For those of you importing heart rate data from your devices, you can now track this over time. </p>
+        <p id="p3">Supported Devices</p>
+        <p id="p2">Currently, this feature is only available for users who have Apple Health, Google Fit, an Oura or a Garmin device connected to their Cronometer account. We aim to add support for more partners in the near future.</p>
+        <p id="p3">How It Works </p>
+        <p id="p2">Navigate to your device settings, click integrations, and select your supported device. In the device settings, swipe to turn on ‘Import full heart rate time series’.    </p>
+        <p id="p2">Once an entry is imported, you can navigate to your diary screen, click on the entry and it will bring you to a chart showing you your heart rate data over time</p>
+
+        <div class="container">
+
+            <div class="card">
+                <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img/https://cronometer.com/blog/wp-content/uploads/2022/06/IMG_8322.png" alt="prabhas"/>
+                <div style="padding-left:20px">
+                    <p id="style">Navigate to the integrations page in the settings menu.</p>
+                   
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img/https://cronometer.com/blog/wp-content/uploads/2022/06/IMG_8321.png" alt="prabhas"/>
+                <div style="padding-left:20px">
+                    <p id="style">Toggle on the heart rate data.</p>                  
+                </div>       
+            </div>
+            
+
+            <div class="card">
+                <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img/https://cronometer.com/blog/wp-content/uploads/2022/06/IMG_DFDBD40369DA-1-scaled.jpeg" alt="prabhas"/>
+                <div style="padding-left:20px">
+                    <p id="style">Click the heart rate entry in your diary.</p>
+                   
+                </div>        
+            </div> 
+        </div>
+
+        <button id="btn">Try It Now</button>
+    
+
+    </div>
+    
+</body>
+</html>

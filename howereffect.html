@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); */
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Open Sans', sans-serif;
+
+            box-sizing: border-box;
+            
+        }
+        .hoverCard{
+            width: 470px;
+            /* border: 1px solid; */
+    padding: 20px 18px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+        }
+       .hoverup {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-top: -12px;
+        }
+        .hoverup button{
+            cursor: pointer;
+    background: #fff;
+    border: 1px solid #e65f29;
+    color: #e65f29;
+    box-shadow: none;
+    padding: 3px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 6px;
+    transition: background 200ms ease-in-out;
+        }
+        .hoverup button:hover{
+            background-color: rgb(182, 182, 182);
+        }
+        .hoverup p{
+            font-weight: 300;
+    color: #818181;
+    font-family: sans-serif;
+        }
+        .upcard{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            }
+        .hoverdowncard{
+            display: flex;
+            /* border: 1px solid red; */
+            margin-top: 15px;
+        }
+        .hovecard{
+            border: 1px solid #ebeae6;
+            background: #faf9f7;
+            border-radius: 4px;
+    padding: 10px;
+    /* width: 205px; */
+    width: 217px;
+    transition: all 200ms ease-in-out;
+
+    cursor: pointer;
+
+
+        }
+        .hovecard:hover{
+            border:  1px solid orange;
+        }
+       .righthovercard {
+            margin-left: 10px;
+
+        }
+        .centercard p{
+            font-size: 12px;
+        }
+        .nameupcard{
+            font-size: 20px;
+        }
+        .centercard{
+            margin: 13px 0px;
+        }
+        .nameupcard+p{
+            font-size: 13px;
+            text-decoration: underline;
+        }
+        .bottomcard{
+            text-align: right;
+            margin-top: 29px;
+        }
+        .bottomcard a{
+            text-decoration: none;
+            color: orange;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbarHover">
+        <button>Home ></button>
+    </div>
+    <div class="hoverCard">
+        <div class="hoverup">
+            <p>signed as: <span>naveensainibillon@gmail.com</span></p>
+            <button>Logout</button>
+        </div>
+        <div class="hoverdowncard">
+            <div class="lefthoverCard hovecard">
+                <div class="upcard">
+                    <p class="nameupcard"> Gold</p>
+                    <p> $49.99/year</p>
+                </div>
+                <div class="centercard">
+                    <p> Our premium features like Timestamps and Food Suggestion will help you plan, customize and share your perfect diet. </p>
+                </div>
+                <div class="bottomcard">
+                    <a href="">learn more</a>
+                </div>
+            </div>
+            <div class="righthovercard hovecard">
+                <div class="upcard">
+                    <p class="nameupcard">Professional</p>
+                    <p> $29.95/mo</p>
+                </div>
+                <div class="centercard">
+                    <p> Our premium features like Timestamps and Food Suggestion will help you plan, customize and share your perfect diet. </p>
+                </div>
+                <div class="bottomcard">
+                    <a href="">learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.navbarHover').onmouseover=function(){
+            // console.log('hello')
+            document.querySelector('.hoverCard').style.display='block';
+        }
+        document.querySelector('.navbarHover').onmouseout =function(){
+            // console.log('hell23o')
+            document.querySelector('.hoverCard').style.display='none';
+
+        }
+
+
+        document.querySelector('.hoverCard').onmouseover=function(){
+            // console.log('hello')
+            document.querySelector('.hoverCard').style.display='block';
+
+        }
+        document.querySelector('.hoverCard').onmouseout =function(){
+            document.querySelector('.hoverCard').style.display='none';
+
+            // console.log('hell23o')
+        }
+        
+    </script>
+</body>
+</html>
