@@ -28,3 +28,7 @@ window.onclick = function (event) {
         }
     }
 };
+
+let d = new Date().toDateString()
+
+document.querySelector('.date>div:nth-child(2)').textContent = d;
