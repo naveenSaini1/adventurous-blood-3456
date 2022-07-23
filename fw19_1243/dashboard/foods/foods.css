@@ -1,0 +1,100 @@
+#container{
+    width:90%;
+    margin:auto;
+}
+#navbar2{
+    display:flex;
+    justify-content: space-around;
+}
+#conatiner2{
+    display:flex;
+}
+#part1{
+    width:25%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;  
+}
+
+#part2{
+    width:75%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#part1-2{
+    width:90%;
+    height:500px;
+}
+#img{
+    width:20%;
+    height:60px;
+    margin:auto;
+}
+#img>img{
+    width:100%;
+    
+}
+#part2>p{
+    text-align: center;
+}
+input{
+    width:90%;
+    margin-top:10px;
+}
+#part1{
+    padding-top:10px;
+    padding-left:15px;
+}
+#button2-1{
+    margin-right: 20px;
+    border:1px solid orange;
+    background-color: white;
+    color:orange;
+    padding:5px;
+    border-radius: 5px;
+}
+#button2-2{
+    margin-left:20px;
+    background-color: rgb(37, 136, 37);
+    color:white;
+    padding:5px;
+    border-radius: 5px;
+    border: transparent;
+}
+#lock{
+width:6%;
+}
+#part2-1-1{
+width:50%;
+}
+#part2-1-2{
+width:50%;
+}
+#part2-1{
+display: flex;
+}
+th{
+text-align: left;
+}
+td{
+text-align: center;
+}
+.button3{
+color:white;
+border-radius: 5px;
+background-color:grey;
+border:transparent;
+padding:5px;
+margin-top: 5px;
+}
+#sub{
+width:70%;
+height:70px;
+border:1px solid grey;
+}
+.border{
+    width:85%;
+border:1px solid grey;
+margin-top: 10px;
+margin-right: 10px;
+}
+table{
+    color:grey;
+}
