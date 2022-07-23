@@ -5,5 +5,5 @@
 
 import {navbar,footer} from "../../components/navbar.js";
 console.log(navbar(),footer());
-document.getElementById("navbar").innerHTML=navbar();
+document.querySelector('.navbar').innerHTML = navbar();
 document.getElementById("footer").innerHTML=footer();
