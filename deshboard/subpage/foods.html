@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/dashboard_diary.css">
+    <link rel="stylesheet" href="../styles/foods.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <div id="container">
+        <div class="navbar">
+
+        </div>
+        
+        <div id="navbar2">
+            <div id="navbar2">
+
+            </div>
+        </div>
+
+        <div id="navbar3">
+            <h2>Custom Recipes</h2>
+            <p style="margin-top: 10px;">Create a new recipe to quickly log your common meals instead of individual ingredients.</p>
+        </div>
+
+        <div id="conatiner2">
+            <div id="part1">
+                <div id="part1-1">
+                    <button id="button2-1">Add Recipe</button>
+                    <img id="lock"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABUCAYAAAAyLjFTAAABNElEQVR42u3bwQ6CMAzGcbtw8iV9Nl/Sk4lePBATEjbWb23675mw9dcCQ5ndRPF6bp+e4++PtynmZZGSXoFhkRNXQFiW5L0QLEviXhCWMfmZCJY1+VkI7VY8bEX1j6o2+3yuACOT7ZmoauHUVNdp7wRDrwR7qnM1Ee+xmnflIy+DhzrgbEVmT9xr3PKPwRa19VWXAh2QpVJe56YDAAAAAAAAAAAAAKqGjb52Zo3/5bRVSfwIwiomv0fgHlC1+jwFAAAAAAAAAAAAAAAAAAAAAACgbmwrBp39oeSVkP4idPYDB+WcWrTke4/lHpABYKSiqi6gAwAAAAAAvGNkYaNaDNEBqoF6KqpcCi/5d7jsyxBPAQAAAAAAAAAAAAAAAAAAAAAAACBCsGOEDvhF6U1T+6i2be4LORSHlKF1nB0AAAAASUVORK5CYII="
+                        alt="">
+                    <button id="button2-2">Import Recipe</button>
+                </div>
+
+                <input type="text" placeholder="Search your recipes...">
+                <div id="part1-2">
+
+                </div>
+            </div>
+
+            <div id="part2">
+                <div id="img">
+                    <img src="data:image/png;base64,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"
+                        alt="">
+                </div>
+                <p>Add a new recipe or find your custom recipes here.</p>
+
+
+                <h2 style="margin:10px 0px 10px 0px;">New Recipe</h2>
+                <p style="text-align:left">Unsaved Recipe, Data Source: Custom</p>
+                <div id="part2-1">
+                    <div id="part2-1-1">
+                        <p>Names</p>
+                        <input type="text" placeholder="New Recipe" class="margin">
+                        <p>Category & Tags</p>
+                        <select name="" class="margin">
+                            <option value="">Baby Foods</option>
+                            <option value="">Baked Products</option>
+                            <option value="">Beef Products</option>
+                            <option value="">Beverages</option>
+                            <option value="">Breakfast Cereals</option>
+                            <option value="">Cereals Grains and Pasta</option>
+                            <option value="">Dairy and Engg Products</option>
+                            <option value="">Ethnic Foods</option>
+                            <option value="">Fats and Oils</option>
+                            <option value="">Finish and Selfish Products</option>
+
+                        </select>
+                        <div class="margin">
+                            <button class="button3">Whole</button>
+                            <button class="button3">Brand</button>
+                            <button class="button3">Restaurant</button>
+                            <button class="button3">Supplement</button>
+                            <button class="button3">Seafood</button>
+                            <button class="button3">Vegetarian</button>
+                            <button class="button3">Vegan</button>
+                            <button class="button3">Dairy</button>
+                            <button class="button3">Nuts</button>
+                        </div>
+
+                        <p>Notes</p>
+                        <div id="sub">
+
+                        </div>
+
+                        <p>Barcodes</p>
+                        <input type="text">
+                        <p>Serving sizes</p>
+                        <input type="text">
+                        <p>Nutrients in</p>
+                        <input type="text">
+
+                        <div class="border">
+                            <table cellspacing="5">
+                                <tr>
+                                    <th>General</th>
+                                    <th>Amount</th>
+                                    <th>%DV</th>
+                                </tr>
+
+                                <tr>
+                                    <td>Energy</td>
+                                    <td>- kcal</td>
+                                    <td>- %</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Alcohol</td>
+                                    <td>g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Ash</td>
+                                    <td>g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Beta-Hydroxybutyrate</td>
+                                    <td>g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Caffeine</td>
+                                    <td>mg</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Oxalate</td>
+                                    <td>mg</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Water</td>
+                                    <td>g</td>
+                                    <td>%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="border">
+                            <table cellspacing="5">
+                                <tr>
+                                    <th>Carbohydrates</th>
+                                    <th>Amount</th>
+                                    <th>%DV</th>
+                                </tr>
+
+                                <tr>
+                                    <td>Total Carbs</td>
+                                    <td>- g</td>
+                                    <td>- %</td>
+                                </tr>
+                                <tr>
+                                    <td>Fiber</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Starch</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Sugars</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Allulose</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Fructose</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Galactose</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Glucose</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Lactose</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Maltose</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Sucrose</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Added Sugars</td>
+                                    <td>- g</td>
+                                    <td>%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Sugar Alcohol</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Net Carbs</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                        <div class="border">
+                            <table cellspacing="5">
+                                <tr>
+                                    <th>Protein</th>
+                                    <th>Amount</th>
+                                    <th>% DV</th>
+                                </tr>
+
+                                <tr>
+                                    <td>Alanine</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Agrinine</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Aspartic Acid</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Cystine</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Glutamic acid</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Glycine</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Histidine</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Hydroxyproline</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Isoleucine</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Leucine</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Lysine</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Methionine</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Phenylalanine</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Proline</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Serine</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Threonine</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Tryptophan</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Tyrosine</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Valine</td>
+                                    <td>- g</td>
+                                    <td></td>
+                                </tr>
+
+
+
+
+
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="part2-1-2">
+                        <table border="1" cellspacing="1">
+                            <tr>
+                                <th colspan="3">New Recipe</th>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3">
+                                    <h1>Nutrition Facts</h1>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3">Serving Size: 1full recipe</td>
+                            </tr>
+
+                            <tr>
+                                <th>Amount Per Saving</th>
+                                <td></td>
+                                <td>% Daily Value*</td>
+                            </tr>
+
+                            <tr>
+                                <th>Calories</th>
+                                <td>- kcal</td>
+                                <td>- %</td>
+                            </tr>
+
+                            <tr>
+                                <th>Total Fat</th>
+                                <td>- g</td>
+                                <td>- %</td>
+                            </tr>
+
+                            <tr>
+                                <td>Saturated Fat</td>
+                                <td>- g</td>
+                                <td>- %</td>
+                            </tr>
+
+                            <tr>
+                                <td>Trans Fat</td>
+                                <td>- g</td>
+                                <td>- %</td>
+                            </tr>
+
+                            <tr>
+                                <th>Cholestrol</th>
+                                <td>- mg</td>
+                                <td>- %</td>
+                            </tr>
+
+                            <tr>
+                                <th>Sodium</th>
+                                <td>- mg</td>
+                                <td>- %</td>
+                            </tr>
+
+                            <tr>
+                                <th>Total Carbohydrate</th>
+                                <td>- g</td>
+                                <td>- %</td>
+                            </tr>
+
+                            <tr>
+                                <td>Dietry Fiber</td>
+                                <td>- g</td>
+                                <td>- %</td>
+                            </tr>
+
+                            <tr>
+                                <td>Sugars</td>
+                                <td>- g</td>
+                                <td>- %</td>
+                            </tr>
+
+                            <tr>
+                                <th>Protein</th>
+                                <td>- g</td>
+                                <td>- %</td>
+                            </tr>
+
+                            <tr>
+                                <th>Vitamin A</th>
+                                <td>-% . Vitamin C</td>
+                                <td>- %</td>
+                            </tr>
+
+                            <tr>
+                                <th>Calcium</th>
+                                <td>-% . Iron</td>
+                                <td>- %</td>
+                            </tr>
+
+                        </table>
+                        <div class="border">
+                            <table cellspacing="5">
+                                <tr>
+                                    <th>Vitamins</th>
+                                    <th>Amount</th>
+                                    <th>%DV</th>
+                                </tr>
+
+                                <tr>
+                                    <td>B1(Thiamine)</td>
+                                    <td>mg</td>
+                                    <td>%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>B2(Riboflavin)</td>
+                                    <td>mg</td>
+                                    <td>%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>B3(Niacin)</td>
+                                    <td>mg</td>
+                                    <td>%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>B5(Pantothenic Acid)</td>
+                                    <td>mg</td>
+                                    <td>%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>B6(Pyridoxide)</td>
+                                    <td>mg</td>
+                                    <td>%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Biotine</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Choline</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Folate</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Vitamin A</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Alpha-carotene</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Beta-carotene</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Beta-cryptoxanthin</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Lutein +Zeaxanthin</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Lycopene</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Retinol</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Vitamin C</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+                                <tr>
+                                    <td>Vitamin D</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+                                <tr>
+                                    <td>Vitamin E</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="border">
+                            <table cellspacing="5">
+                                <tr>
+                                    <th>Minerals</th>
+                                    <th>Amount</th>
+                                    <th>% DV</th>
+                                </tr>
+                                <tr>
+                                    <td>Calcium</td>
+                                    <td>mg</td>
+                                    <td>%</td>
+                                </tr>
+                                <tr>
+                                    <td>Chromium</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+                                <tr>
+                                    <td>Copper</td>
+                                    <td>mg</td>
+                                    <td>%</td>
+                                </tr>
+                                <tr>
+                                    <td>FLuoride</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+                                <tr>
+                                    <td>Iodine</td>
+                                    <td>mg</td>
+                                    <td>%</td>
+                                </tr>
+                                <tr>
+                                    <td>Iron</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+                                <tr>
+                                    <td>Magnesium</td>
+                                    <td>mg</td>
+                                    <td>%</td>
+                                </tr>
+                                <tr>
+                                    <td>Maganese</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+                                <tr>
+                                    <td>Molybdenum</td>
+                                    <td>mg</td>
+                                    <td>%</td>
+                                </tr>
+                                <tr>
+                                    <td>Phosphorus</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+                                <tr>
+                                    <td>Potassium</td>
+                                    <td>mg</td>
+                                    <td>%</td>
+                                </tr>
+                                <tr>
+                                    <td>Selenium</td>
+                                    <td>μg</td>
+                                    <td>%</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+    </div>
+</body>
+
+</html>
+
+<script src="../scripts/foods.js" type="module"></script>
+<script src="../scripts/hello.js" type="module"></script>
+<!-- <script>
+    console.log('hello')
+</script> -->

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a request</title>
+    <link rel="stylesheet" href="./styles/sub_req.css">
+</head>
+
+<body>
+    <!-- <a href=""></a> -->
+    <div class="navbar"></div>
+    <hr>
+    <div class="sub_navbar"></div>
+    <div class="container">
+        <h1>Submit a request</h1>
+        <form id="req_form">
+            <label for="mail">Your email address*</label>
+            <input type="email" id="mail" required>
+            <label for="subject">Subject*</label>
+            <input type="text" name="" id="subject" required>
+            <label for="description">Description*</label>
+            <input type="text" name="" id="description" required>
+            <p>
+                Please enter the details of your request. A member of our support staff will respond as soon as
+                possible.</p>
+            <label for="file">Attachments</label>
+            <div>
+                <input type="file" placeholder="Add file or Drop files here" id="file">
+                <div>
+                    <button id="add_file" type="button">Add file or drop files here</button>
+
+                </div>
+            </div>
+            <input type="submit" id="submit">
+
+        </form>
+    </div>
+    <hr>
+    <div class="footer"></div>
+
+</body>
+
+</html>
+<script src="./scripts/sub_req.js" type="module"></script>

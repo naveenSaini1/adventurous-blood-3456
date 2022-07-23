@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometer</title>
+    <link rel="stylesheet" href="./styles/dashboard_diary.css">
+</head>
+
+<body>
+    <div class="navbar"></div>
+   
+    <hr>
+    <div class="body">
+        <div class="content">
+            <div class="left_div">
+                <div class="date">
+                    <div>
+                        <p>
+                            < </p>
+                    </div>
+                    <div>July 22, 2022</div>
+                    <div>
+                        <p>></p>
+                    </div>
+                </div>
+                <div class="e_history">
+                    <div>Energy History (kcal)</div>
+                    <div class="e_history_content">
+                        <div>
+
+                        </div>
+                        <div>
+                            <select name="" id="status">
+                                <option value="">Consumed</option>
+                                <option value="">Burned</option>
+                                <option value="">Net</option>
+                                <option value="">Combined</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select name="" id="when">
+                                <option value="">Last 7 days</option>
+                                <option value="">Last 2 weeks</option>
+                                <option value="">Last 4 weeks</option>
+                                <option value="">Last 8 weeks</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="weight_check">
+                    <div>Weight Change: 0.0Kg</div>
+                    <div> </div>
+                    <div>
+                        <select name="" id="time">
+                            <option value="">Last 7 days</option>
+                            <option value="">Last 2 weeks</option>
+                            <option value="">Last 3 weeks</option>
+                            <option value="">Last 4 weeks</option>
+                            <option value="">Last 8 weeks</option>
+                            <option value="">Last 3 months</option>
+                            <option value="">Last 6 months</option>
+                            <option value="">Last year</option>
+                            <option value="">All time</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+            <div class="right_div">
+                <div class="add_items">
+                    <div><button><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAABoklEQVR4XrVWwU7CQBDtJ/AJfAJ/YJPuht2YKAcPWkzsxdKb3D3I3UT5BM62Bm56k8QPgHtL6h/AH+BM29V2thgqyyQvlJnZebPTmQHLqhE/7A8HUf9DwY+uesrmTb0W2J/90F0A5qVj+8sgdGcQeFtG8Op6wfSyPYjcVOn+TRCE1zYl8KP+uriRCr4BsjE9u7cUZaqQlLDEUtEzjeX2xe1ApiMkgxtMFAGWi/o2kpTzTtxl54lwbvAZdeX3gtmntt1KJT9ZdfkdfuJ3GkeTRDq9WPJFIvm2AsHTd//07fHpYjG5P/tMJJtqPpKtV4I97CRaSTbUDzUHJqiRYObU8RAgSZVAsA11OhRYkSI496jRCOC9qexnmtEQsg6MBV9Sgzk4PUtXmkMs2OioBNmLhgH5ogZTgBvYFvTsnBpMISOAhzE1mELepoanWAErU8zxcSYZB/iXwHSZIOHKwkuF3dacDoP+U4rKGsfmoNkrQaWJmfjZonWCfUsPNAIsThpTk7/X9+4b4tKsLU2d4E3Uls0mvdxyVv6nAHSTvL0z0vGu4N8O/opsvXoX7wAAAABJRU5ErkJggg=="
+                                alt="">
+                            ADD FOOD</button>
+                    </div>
+                    <div><button><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAABtElEQVR4Xq1W61HDMAzOCIzQEdgARnA26AawAWwAv5uUdoOyAWzQbkAuzl1/lg2oJNuJLT/iOnx3uqaxrE8vy6mqBRC780q08iDa/gLyA89PXGcxxO5yJxp5rFv5Z4tohmeuuwhA8shJFJE8ct1FgFQJTqKl47pZwBTVH/LByPT+vKqb/pcTQZ3e7f2zMIXmhrSxA6aOorLJmv4THVP7sYb9m/kfhNgOa248JESIDiEp/I771TtqFOrGzXBvmddKIZJGfivxUzUSbuULiW53Zx1scp4KFrqJYEoFArx85SRJAceCJAZkECJw3lHNXE9TArp7O53ZwOi4MS2nsU5wWFW9Eg2QQuxwkuewxvWLUdt1swWi5LrFiDYAFrqkBiGkGgAd4PrFwM7hBFq6ooJjr/M0pBpARTQzXjhwPIQ2w/+TZRifvYZQF17mZUejxd/sDFMzq9RB9sdQVr10ijxvJ2J37Oub1SEk53LTiKc64G206HRPuWR7rhMFeQsRjJtnTj0/Y3P6Huj8pKauBYzaSvMXX/838G+HXAeLYHcu3aiRui4GfaiYqHAG3lqrW4BNRBKJ5grd7Oe2o+DGBQAAAABJRU5ErkJggg=="
+                                alt="">
+                            ADD EXERCISE</button>
+                    </div>
+                    <div><button><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAbCAYAAACAyoQSAAAB60lEQVR4XrVW3W3CMBBmhI7QEToCDyTqIyOwQbtBkK0+lw3KBu0G7QZkg6IEiUe6QXuf7TPO2YlDCid9IrJ9/u7fzGZC2oWet6V+bwp1ot/fplTf9P2GdXmW5TSv7tpCPxE+oWNQ6B39VsfH6l6e9+IUz0oJkAGvUu9QvDzAMHnW65Dxh0KtpB4TwrJISQJes54hdBHJISImwo08NAQQX0LodE4+1PiQB8ZgKKR9aEq9neTlf4FUEqn6khs3BbogWhwLMpbCtYzW81hPJuVqbEtVy70MppNyJeISuZfBOp9TKrQ4jKrmykfrRDoDwF3Z6mWPmkL/+HXSQRVyC3T2MjDVO2Qp9eIHLjUX0zev29Gnl2h4u6e3Xq/QexO9JPSG74O3e0loSfUSBCaMC/Vs1sirkIgN4D3jyRgxUwmviwD2cDkqlSMShdSFOvxOj0dbBx1x1lYh8KpIotAAR7TDHsJnC0utYkIbkQ4hBAp9BYE5izPIq/Oq0ybQ9S2USlWYSylxa3Qv5pDLgcCDIu2lqrN57lRi4mKfvwBc5dLLiworRcx5TXtj30tJmMzjkEjiMK+SUMLUxsB/qkFJEUsCiUkeSsmNyasTsvTlsYsRVXqpIEf9fay3VydksS/LuZB4QslzNxE7/FU9NX9/tgR0Z1Ljx18AAAAASUVORK5CYII="
+                                alt="">
+                            ADD BIOMETRIC</button>
+                    </div>
+                    <div><button><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAABC0lEQVR4Xs2WTQqCQBiGbd8InaHu0L4LBJ2lVRC0ySxadxB15SpoUVeYFq0Ko72OaDbNICWMmn/fkC88oI4zz+YVP4VSpUOs7tw10N0zVVoXYqGZUhTXRJq4sS6FQiZzxE1V8I9j6lm95JmBpqLjG7YYiQdUIbzs6NMxygkhZDylhFCyUkJIWaEQWvZT6JnoJR5QhSwZT6ZQloxHFDaW+acJDfEqF/8wgpNV4X+yAOs0OG/ACLEmypIb8ESkJbKAtSfAazBCvMyXyeZ/srhF28YQe5AS8dZLKQjZD1sm4x9h3MhmELtfLJMLkzWdF0tjoBv/U+upBQm4prpQ+ETML9j8+BBfgAFdP2PBG9XdDDHqbQnFAAAAAElFTkSuQmCC"
+                                alt="">
+                            ADD NOTE</button>
+                    </div>
+                    <div class="dotmenu">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAABaklEQVR4Xu3azU3DQBAG0LlxoQXIhRKhBkQJUASUACVAJwgJceLHI+VCVpGdeM0Y6T3pk1DivcxhY3a/CAAAAAAAgPU5G3I15GnI6zb5d36W37GQ0yEPQ76GfO9JfpfP5LN0dDLkJdqB70s+m2vo5C7aIY8l19DBxZDPaAc8llyTa5npOtrhTk2uZabnaAc7NflbwEwf0Q52at6D2d6iHezU5FpmsgUVu4l2sFOTa5lpE8e/hp4HXdxGO+Cx+EesozxWOOS3wFHEAvKA7T7GD+PyGYdxC8p9/TJ+H0c/bj+z5wMAACxAL6iIXlAhvaBiekGF9IKK6QUVO+QiZjcu5TvQCyqmF1TMFlRML6jYJo5/DXVH3IleUDG9oBXQC1oJvSAAAIA/phdURC+okF5QMb2gQnpBxfSCih1yEbMbl/Id6AUV0wsqZgsqphdUbBPHv4a6I+5EL6iYXtAK6AWthF4QAAAAAADwr/wAXpVUQUN5zAgAAAAASUVORK5CYII="
+                            alt="">
+                    </div>
+                </div>
+                <div class="serving_panel">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <div>Description</div>
+                                </th>
+                                <th>
+                                    <div>Amount</div>
+                                </th>
+                                <th>
+                                    <div>Unit</div>
+                                </th>
+                                <th>
+                                    <div>Energy(kcal)</div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="info">
+                    <div class="diary_side">
+                        <div class="e_summary">
+                            <div class="e_summary_head">
+                                <p>Energy Summary</p>
+                            </div>
+                            <div class="e_sum_canvas">
+                                <div>
+                                    <div>0</div>
+                                    <div>kcal</div>
+                                    <P>CONSUMED</P>
+                                </div>
+
+                                <div>
+                                    <div>2000</div>
+                                    <div>kcal</div>
+                                    <P>BURNED</P>
+                                </div>
+                                <div>
+                                    <div>2000</div>
+                                    <div>Calories Remaining</div>
+                                    <P>BUDGET</P>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="macro_target">
+                            <div class="macro_target_head">
+                                <p>Micronutrients Targets</p>
+                                <div>
+                                    <div>Energy</div>
+                                    <div>0.0kcal / 2000kcal</div>
+                                </div>
+                                <div>
+                                    <div>Protien</div>
+                                    <div>0.0kcal / 2000kcal</div>
+                                </div>
+                                <div>
+                                    <div>Net Carbs</div>
+                                    <div>0.0kcal / 2000kcal</div>
+                                </div>
+                                <div>
+                                    <div>Fat</div>
+                                    <div>0.0kcal / 2000kcal</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nutritious_summary">
+                        <!-- <div><p>Nutrution Scores</p></div> -->
+                        <div class="target">
+                            <div>
+                                <div>0%</div>
+                                <div>All Targets</div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://cdn1.cronometer.com/2020/scores/NutritionScores_BannerGoldA.png" alt="">
+                        </div>
+                    </div>
+                    <div class="highlited_nutrients">
+                        <div>
+                            <p>Highilited Nutrients</p>
+                        </div>
+                        <div class="h_n_canvas">
+                            <div>
+                                <div>0%</div>
+                                <div> Fiber</div>
+                            </div>
+                            <div>
+                                <div>0%</div>
+                                <div> Iron</div>
+                            </div>
+                            <div>
+                                <div>0%</div>
+                                <div> Calcium</div>
+                            </div>
+                            <div>
+                                <div>0%</div>
+                                <div> Vit.A</div>
+                            </div>
+                            <div>
+                                <div>0%</div>
+                                <div> Vit.C</div>
+                            </div>
+                            <div>
+                                <div>0%</div>
+                                <div> Vit.B</div>
+                            </div>
+                            <div>
+                                <div>0%</div>
+                                <div> Folate</div>
+                            </div>
+                            <div>
+                                <div>0%</div>
+                                <div> Potassium</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="left_table">
+                            <div class="general">
+                                <div>General</div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Energy</td>
+                                            <td>kcal</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alcohol</td>
+                                            <td>g</td>
+                                            <td>No target</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Caffine</td>
+                                            <td>mg</td>
+                                            <td>No target</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Water</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <div class="carbs">
+                                <div>Carbohydrates</div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Carbs</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fiber</td>
+                                            <td>g</td>
+                                            <td>No target</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Starch</td>
+                                            <td>g</td>
+                                            <td>No target</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sugar</td>
+                                            <td>g</td>
+                                            <td>No target</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Net Sugars</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <div class="lipids">
+                                <div>Lipids</div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Fat</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Monounsaturated</td>
+                                            <td>g</td>
+                                            <td>No target</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Polyunsaturated</td>
+                                            <td>g</td>
+                                            <td>No target</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Omega-3</td>
+                                            <td>g</td>
+                                            <td>No target</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Omega-6</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Saturated</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Trans-Fat</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cholestrol</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <div class="protien">
+                                <div>Protien</div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Protien</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cystine</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Histidine</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Isoleucine</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Leucine</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lycine</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Methoinine</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Phenylalanine</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Threonine</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Thryptophan</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tyrosine</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Valine</td>
+                                            <td>g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="right_table">
+                            <div class="vitamins">
+                                <div>Vitamins</div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>B1 (Thiamin)</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>B2 (Riboflavin)</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>B3 (Niacin)</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>B5 Pantothenic Acid</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>B6 (Pyridoxine)</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>B12 (Cobalamin)</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Folate</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vitamin A</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vitamin C</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vitamin D</td>
+                                            <td>IU</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vitamin E</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vitamin K</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="minerals">
+                                <div>Minerals</div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Calcium</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Copper</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Iron</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Magnesium</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Manganeese</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Phosporus</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Potassium</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Selenium</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sodium</td>
+                                            <td>mg</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Zinc</td>
+                                            <td>IU</td>
+                                            <td>0%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./scripts/dashboard_diary.js" type="module"></script>
+<script>
+
+let value=localStorage.getItem('log');
+if(value=='true'){
+    // window.location.href="../../deshboard/desh.html";
+}
+else if(value=='false'){
+    window.location.href='/'
+}
+</script>

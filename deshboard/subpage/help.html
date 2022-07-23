@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/dashboard_diary.css">
+    <title>Document</title>
+    <style>
+        #heading{
+            width:45%;
+            height:auto;
+            margin:auto;  
+            text-align: center;
+            margin-top: 33px;
+        }
+
+        #heading>h1{
+            font-size: 2em;
+            margin-bottom: -2%;
+            
+        }
+
+        #heading>p{
+            /* margin-top: -10px; */
+            color:grey;
+            font-size: 16px; 
+            line-height: 30px; 
+            margin-bottom: -4%;
+
+        }
+
+        #cards{
+            width:100%;
+            /* height:300px;  */
+            height:100%; 
+            /* border:1px solid red; */
+            margin:auto;
+            margin-top: 20px;
+            display:flex;
+        }
+
+        #cards>div{
+            /* width:30%; */
+            width:30%;
+            height:100%;
+            /* border:1px solid teal; */
+            margin:auto;
+            text-align: center;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 20px; 
+        }
+       
+       .container-2 >button{
+            border-radius: 5px;
+            color: #fff;
+            font-size: 20px;
+            background: #45af64;
+            padding: 10px 40px 10px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            width: 70%;
+            text-align: center;
+            margin-left: 20%;
+            margin-bottom: 5%;
+            cursor: pointer;
+            border: none;
+
+            display: inline-block;
+            position: relative;
+            top: -1px;
+            left: 3px;
+            /* border-style: solid; */
+            border-width: 6px 0 6px 10px;
+            border-radius: 5px;
+            
+         
+            font-size: 15px;
+            margin-bottom: 20px;
+            font-weight:bold;
+       
+
+        }
+
+        #flex{
+            display: flex;
+            margin:auto;
+            justify-content: space-evenly;
+            margin-bottom: 2.5%;
+        }
+
+        #p1{
+            line-height: 17px;
+            font-size: 0.8em;
+            margin: 5px;
+            text-align: left;
+            color: #555;
+            display: block;
+            font-family: "Open Sans", sans-serif;
+            font-weight: normal;
+
+        }
+
+        #p2{
+            margin: 0 auto 2px;
+            text-align: center;
+            color: #555;
+            display: block;
+            font-size: 2em;
+            font-weight: bold;
+            font-family: "Open Sans", sans-serif;
+            /* margin-bottom: 4%; */
+
+        }
+
+        #p3{
+            text-align: center;
+            color: #555;
+            display: block;
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+        
+        }
+
+
+        #heading1{
+          
+            text-align: left;
+            color: #555;
+            display: block;
+            font-size: 1.5em;
+            font-family: "Open Sans", sans-serif;
+            margin-bottom: 5%;
+            margin-left: 3%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar"></div>
+    <div id="heading">
+        <h1 id="p2">Find your answers here </h1>
+        <p id="p3">We have compiled all of our resources in one place so you can find the help you need. </p>
+    </div>
+
+    <!-- Cards section -->
+    <div id="cards">
+        <div>
+            <h2 id="heading1">Cronometer University </h2>
+            <div id="flex">
+                <img src="https://cdn1.cronometer.com/media/icon-cronometer-university.png" alt="">
+                <p id="p1">Our video tutorial series will teach you everything you need to know about our application, one feature at a time.</p>
+            </div>
+            <button>Watch</button>
+        </div>
+        <div>
+            <h2 id="heading1">Find a Professional</h2>
+            <div id="flex">
+                <img src="https://cdn1.cronometer.com/media/icon-find-a-professional.png" alt="">
+                <p id="p1">If you'd like to find some professional help with achieving your health and fitness goals and want someone who can work with you using Cronometer, check out our Pro Directory to find a coach, nutritionist or trainer near you.</p>
+            </div>
+            <button>Search</button>
+        </div>
+        <div>
+            <h2 id="heading1">Contact Support</h2> 
+            <div id="flex">
+                <img src="https://cdn1.cronometer.com/media/icon-contact-support.png" alt="">
+                <p id="p1">We are here to help. If you can't find an answer to your question in our videos or the user manual, click here to drop us a line and we will get back to you with an answer as soon as we can.</p>
+            </div>
+            <button>support@cronometer.com</button>
+        </div>
+
+    </div>
+
+    <div id="cards">
+        <div>
+            <h2 id="heading1">User Manual</h2>
+            <div id="flex">
+                <img src="https://cdn1.cronometer.com/media/icon-user-manual.png" alt="">
+                <p id="p1">All the documentation we have on our application, full of screenshots and step by step explanations of all of our features.</p>
+            </div>
+            <button>Read</button>
+        </div>
+        <div>
+            <h2 id="heading1">Our Blog</h2>
+            <div id="flex">
+                <img src="https://cdn1.cronometer.com/media/icon-blog.png" alt="">
+                <p id="p1">Check out our blog to stay up to date on all the latest news and updates.</p>
+            </div>
+            <button>Read</button>
+        </div>
+        <div>
+            <h2 id="heading1">Community Forums</h2>
+            <div id="flex">
+                <img src="https://cdn1.cronometer.com/media/icon-community-forum.png" alt="">
+                <p id="p1">Want to see how others are using Cronometer? Join the conversation on our forums.</p>
+            </div>
+            <button>Read</button>
+        </div>
+
+    </div>
+    
+    <div class="footer">
+
+    </div>
+    <script src="../scripts/help.js" type="module"></script>
+</body>
+</html>
