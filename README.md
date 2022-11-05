@@ -1,3 +1,5 @@
 # adventurous-blood-3456
-<p> we made the cronometer.com webstie clone In this team we were 5 Members in this team </P>
-<p> we tried to do same all the things like login and signup and other functioality </p>
+Cronometer is the comprehensive nutrition tracking application. It aims to provide a complete solution – no matter what diet you choose to be on.
+
+It was a collabrative project made by 5 members in 6 days.
+
