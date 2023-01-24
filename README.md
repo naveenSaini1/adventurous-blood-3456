@@ -1,4 +1,4 @@
-# Clone of Cronometer website
+# Cronometer clone
 
 ## About Project
 
