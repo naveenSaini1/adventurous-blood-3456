@@ -1,4 +1,4 @@
-# adventurous-blood-3456
+# Clone of Cronometer website
 
 ## About Project
 
